@@ -93,11 +93,6 @@ h1{
 
 }
 
-.leaflet-container{
-  &.swiping:: after {
-    content: 'Use two fingers to move the map';
-  }
-}
 
 
 
