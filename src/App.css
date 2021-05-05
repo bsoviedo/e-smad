@@ -79,12 +79,24 @@ h1{
 }
 
 .leaflet-container {
+  
+  
+
   display:block;
   width: 98%;
   margin-left: 2%;
   margin-bottom:0;
   
   position: relative;
+
+
+
+}
+
+.leaflet-container{
+  &.swiping:: after {
+    content: 'Use two fingers to move the map';
+  }
 }
 
 

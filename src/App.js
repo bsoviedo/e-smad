@@ -10,6 +10,7 @@ import iconShadow from 'leaflet/dist/images/marker-shadow.png';
 
 
 
+
 let DefaultIcon = L.icon({
   iconUrl: icon,
   shadowUrl: iconShadow
@@ -17,6 +18,7 @@ let DefaultIcon = L.icon({
 
 
 L.Marker.prototype.options.icon = DefaultIcon;
+
 
 //Import components
 
@@ -26,8 +28,6 @@ export class Map extends React.Component {
 
 
   position = [4, -74]
-
-
 
   render() {
     return (<div>
@@ -58,8 +58,11 @@ export class Map extends React.Component {
 
 
       </div>
+      {/* Con las opciones de Dragging y de tap se intenta que no se pueda mover la página de leaflet en movil.
+       Otra opción sería desplegar un botón o algo >.<
+       */}
 
-      <MapContainer center={this.position} zoom={6} scrollWheelZoom={true}  >
+      <MapContainer center={this.position} zoom={6} dragging={!L.Browser.mobile} tap={!L.Browser.mobile}>
         <TileLayer
           attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
           url="https://tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png"
