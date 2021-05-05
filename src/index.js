@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import { Map, Displaypopup } from './App';
+import { Map } from './App';
 import reportWebVitals from './reportWebVitals';
 
 

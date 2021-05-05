@@ -1,5 +1,18 @@
   @import url("~leaflet/dist/leaflet.css");
 
+  @media (max-width:600px){
+
+
+.leftdiv{
+  background-color: red;
+}
+
+
+
+
+
+  }
+
 
  .popup {
   position: fixed;

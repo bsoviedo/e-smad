@@ -2,8 +2,6 @@ import './App.css';
 import React from 'react';
 import { MapContainer, TileLayer } from 'react-leaflet'
 import Renderdata from './components/renderdata';
-import data from './data/data.json';
-import { GeoJSON } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import icon from 'leaflet/dist/images/marker-icon.png';
@@ -61,7 +59,7 @@ export class Map extends React.Component {
       <MapContainer center={this.position} zoom={6} scrollWheelZoom={true}  >
         <TileLayer
           attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-          url="https://tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png" opacity={0.3}
+          url="https://tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png"
         />
         <Renderdata />
 
