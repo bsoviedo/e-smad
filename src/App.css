@@ -1,17 +1,6 @@
   @import url("~leaflet/dist/leaflet.css");
 
-  @media (max-width:600px){
-
-
-.leftdiv{
-  background-color: red;
-}
-
-
-
-
-
-  }
+ 
 
 
  .popup {
@@ -58,7 +47,7 @@
 .leftdiv{
   display: inline-block;
   width:25%;
-  height: 97vh;
+  /* height: 97vh; */
   text-align: justify;
   margin-left: 2%;
 }
@@ -78,3 +67,28 @@ h1{
 .card{
   margin-left: 10%
 }
+
+ @media all and (max-width:900px){
+
+
+.leftdiv{
+  display:block;
+  width: 98%;
+
+  position:relative;
+}
+
+.leaflet-container {
+  display:block;
+  width: 98%;
+  margin-left: 2%;
+  margin-bottom:0;
+  
+  position: relative;
+}
+
+
+
+
+
+  }

@@ -35,7 +35,7 @@ export class Map extends React.Component {
         <h1>Víctimas relacionadas con el ESMAD en Colombia </h1>
 
         <p className='text'> Bienvenido/a!
-        En este proyecto, se despliegan los casos de personas asesinadas en las que el Escuadrón
+        En este proyecto, se despliegan los 45 casos documentados por Vidas Silenciadas de personas asesinadas en las que el Escuadrón
         Movil Antidisturbios (ESMAD) ha tenido participación (presunta o confirmada). Todos los datos
         presentados en este geovisor se extraen de la base de datos de Vidas Silenciadas.org, todos los datos
         fueron levantados por ese equipo de trabajo y en este proyecto solo se visibilizan.
@@ -45,6 +45,9 @@ export class Map extends React.Component {
         mencionada, razón por la cual los hechos de los años 2020 y 2021, faltando incluso casos como el de <a href='https://es.wikipedia.org/wiki/Dilan_Cruz'
             target='blank' alt='wikipedia'>Dilan Cruz </a>, no obstante, todos los datos se encuentran en actualización con el fin de añadir las fuentes relacionadas
         a cada registro.
+        <br />
+          <br />
+        Para conocer el detalle de cada caso, selecciona cada marcador en el mapa.
         <br />
           <br />
 
